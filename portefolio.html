@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Portefólio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      padding: 1em 2em;
+      z-index: 1000;
+    }
+
+    #header h1 a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .main {
+      padding-top: 6em;
+      padding-bottom: 4em;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .project {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .project:hover img {
+      transform: scale(1.05);
+    }
+
+    .project .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      padding: 1em;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .project:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+  <h1>
+    <a href="index.html">
+      <img src="images/logo1.png" alt="" style="height: 2em; vertical-align: middle;" />
+    </a>
+  </h1>
+  <nav>
+    <ul>
+      <li><a href="index.html#intro">Início</a></li>
+      <li><a href="index.html#one">Sobre</a></li>
+      <li><a href="planos.html">Serviços</a></li>
+      <li><a href="portefolio.html">Portefólio</a></li> <!-- link para esta mesma página -->
+      <li><a href="index.html#contact">Contactos</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  
+
+  
+
+    <div class="gallery-grid">
+      <div class="project">
+  <a href="projetos summer.html">
+    <img src="images/thumbs/01.jpg" alt="Projeto Summer" />
+    <div class="overlay"><h3>Summer</h3></div>
+  </a>
+</div>
+
+      <div class="project">
+  <a href="projeto o refugio.html">
+    <img src="images/thumbs/02.png" alt="Projeto O Refugio" />
+    <div class="overlay"><h3>O Refúgio</h3></div>
+  </a>
+</div>
+      <div class="project">
+  <a href="projeto entre paredes e historias.html">
+    <img src="images/thumbs/03.jpg" alt="Entre Paredes e Histórias" />
+    <div class="overlay"><h3>Entre Paredes e Histórias</h3></div>
+  </a>
+</div>
+      <div class="project">
+  <a href="projeto the lap pool house.html">
+    <img src="images/thumbs/7.jpg" alt="The Lap Pool House" />
+    <div class="overlay"><h3>The Lap Pool House</h3></div>
+  </a>
+</div>
+      <div class="project">
+  <a href="projeto 555.html">
+    <img src="images/thumbs/6.png" alt="O Plano A - 555 Garden House" />
+    <div class="overlay"><h3>O Plano A - 555 Garden House</h3></div>
+  </a>
+</div>
+      <div class="project">
+  <a href="projeto stone house.html">
+    <img src="images/thumbs/5.jpg" alt="Stone House" />
+          <div class="overlay"><h3>Stone House</h3></div>
+        </a>
+      </div>
+
+      <div class="project">
+  <a href="projeto 444.html">
+    <img src="images/thumbs/41.jpg" alt="444" />
+          <div class="overlay"><h3>444</h3></div>
+        </a>
+      </div>
+
+      <div class="project">
+  <a href="projeto cellar.html">
+    <img src="images/thumbs/2.jpg" alt="444" />
+          <div class="overlay"><h3>The cellar House</h3></div>
+        </a>
+      </div>
+
+      <div class="project">
+  <a href="projeto modern.html">
+    <img src="images/thumbs/1.jpg" alt="444" />
+          <div class="overlay"><h3>Modern House Design</h3></div>
+        </a>
+      </div>
+      <!-- Adiciona mais projetos conforme necessário -->
+    </div>
+  </section>
+
+<!-- Footer -->
+      <footer id="footer">
+
+        <!-- Icons -->
+          <ul class="icons">
+          
+            <li><a href="https://www.instagram.com/pcrispim_artist" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.linkedin.com/feed/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://www.behance.net/pedrocrispim" class="icon brands fa-behance"><span class="label">~Behance</span></a></li>
+            
+          </ul>
+
+        <!-- Menu -->
+          <ul class="menu">
+            <li>&copy; 2025 P3DRO CRISPIM</li>
+          </ul>
+
+      </footer>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

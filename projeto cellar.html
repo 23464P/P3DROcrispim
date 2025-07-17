@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <title>The cellar House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    body {
+      background: #3f3f3f;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3em;
+      line-height: 3em;
+      padding: 0 1.5em;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #header h1 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #header img {
+      height: 2em;
+      vertical-align: middle;
+    }
+
+    .main {
+      padding: 6em 2em 3em;
+      text-align: center;
+    }
+
+    .main h2 {
+      font-size: 2em;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-bottom: 2em;
+    }
+
+    .gallery-project {
+      display: ;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-project img {
+      width: 70%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-project img:hover {
+      transform: scale(1.05);
+    }
+
+     .plan-title {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .plan-title h2 {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin: 0;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+        .project-nav {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.project-nav .button {
+  padding: 0.7em 1.5em;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+  border-radius: 4px;
+}
+
+.project-nav .button:hover {
+  background: #fff;
+  color: #000;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<header id="header">
+  <h1>
+    <a href="index.html">
+      <img src="images/logo1.png" alt="logo" style="height: 2em; vertical-align: middle;" />
+    </a>
+  </h1>
+  <nav>
+    <ul>
+      <li><a href="index.html#intro">Início</a></li>
+      <li><a href="index.html#one">Sobre</a></li>
+      <li><a href="planos.html">Serviços</a></li>
+      <li><a href="portefolio.html">Portefólio</a></li> <!-- link para esta mesma página -->
+      <li><a href="index.html#contact">Contactos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="plan-title">
+      <h2>The cellar House</h2>
+    </div>
+
+    <section class="main">
+    
+  <div class="gallery-project">
+    <img src="images/fulls/C1.jpg" alt="The cellar House 1" />
+      <img src="images/fulls/C2.jpg" alt="The cellar House 3" />
+      <img src="images/fulls/C3.jpg" alt="The cellar House 4" />
+      <img src="images/fulls/C4.jpg" alt="The cellar House 5" />
+      <img src="images/fulls/C5.jpg" alt="The cellar House 6" />
+      <img src="images/fulls/C6.jpg" alt="Stone House 7" />
+      <img src="images/fulls/C7.jpg" alt="Stone House 8" />
+      <img src="images/fulls/C8.jpg" alt="Stone House 9" />
+      <img src="images/fulls/C9.jpg" alt="Stone House 11" />
+      <img src="images/fulls/C10.jpg" alt="Stone House 12" />
+      
+    </div>
+  </section>
+
+<div class="project-nav">
+    <a href="projeto 444.html" class="button prev">← 444</a>
+    <a href="projeto modern.html" class="button next">Modern House Design →</a>
+  </div>
+
+</body>
+</html>
