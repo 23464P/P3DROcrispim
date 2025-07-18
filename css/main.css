@@ -2006,7 +2006,33 @@ nav ul li a:hover::after {
 
 /* Main */
 
-/* Esconde checkbox */
+
+	.main {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		position: relative;
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+		.main > .content {
+			width: 45em;
+			max-width: calc(100% - 4em);
+			margin: 0 auto;
+		}
+
+			.main > .content > :last-child {
+				margin-bottom: 0;
+			}
+
+		.main.fullscreen {
+			min-height: 100%;
+		}
+
+		
+		/* Esconde checkbox */
 #menu-toggle {
   display: none;
 }
@@ -2063,31 +2089,6 @@ nav ul li a:hover::after {
     display: block;
   }
 }
-
-
-	.main {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		position: relative;
-		margin: 0;
-		overflow-x: hidden;
-	}
-
-		.main > .content {
-			width: 45em;
-			max-width: calc(100% - 4em);
-			margin: 0 auto;
-		}
-
-			.main > .content > :last-child {
-				margin-bottom: 0;
-			}
-
-		.main.fullscreen {
-			min-height: 100%;
-		}
 
 		.main.style1 {
 			-moz-align-items: center;
