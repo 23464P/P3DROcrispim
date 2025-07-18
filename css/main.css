@@ -2006,6 +2006,65 @@ nav ul li a:hover::after {
 
 /* Main */
 
+/* Esconde checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Ícone de hambúrguer */
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 0.6em;
+  z-index: 10001;
+}
+
+/* Menu padrão (desktop) */
+#navMenu ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navMenu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #navMenu {
+    display: none;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  #navMenu ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + #navMenu {
+    display: block;
+  }
+}
+
+
 	.main {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2355,7 +2414,6 @@ nav ul li a:hover::after {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
-	
 
 	/* Grelha de planos lado a lado */
 .plans-grid {
