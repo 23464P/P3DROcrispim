@@ -2079,9 +2079,10 @@ nav ul li a:hover::after {
     padding: 1em 0;
   }
 
-  #menu-toggle:checked + .menu-icon + #navMenu {
-    display: block;
-  }
+ #menu-toggle:checked ~ #navMenu {
+  display: block;
+}
+
 
   #navMenu ul li {
     margin: 1em 0;
